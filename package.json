@@ -1,0 +1,31 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.common.js --open",
+    "build": "webpack --config webpack.common.js"
+  },
+  "keywords": [],
+  "author": "just6660",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.1.0",
+    "css-loader": "^6.2.0",
+    "file-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "node-sass": "^6.0.1",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.52.0",
+    "webpack-cli": "^4.8.0"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
