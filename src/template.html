@@ -7,41 +7,60 @@
     <title>Document</title> 
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <a class="navbar-brand text-primary" href="#" >Tina's Kitchen <img src="./assets/chipmunk_mary.jpg"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+  <div class="content d-flex flex-column justify-content-between vh-100" id ="content">
+    <div class="header">
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <div class="col-3">
+              <img src="./assets/tinaimg.jpg" href="#" class="img-fluid" style="max-width:100px">
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse col-6" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 w-100 justify-content-center">
+              <li class="nav-item">
+                <button class="btn btn-dark mx-3" id="home-btn">Home</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-dark mx-3" id="menu-btn">Menu</button>
+              </li>
+              <li class="nav-item">
+                <button class="btn btn-dark mx-3" id="contact-btn">Contact</button>
+              </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+          </div>
+          <div class="col-3"> 
+            <form class="d-flex ms-auto" style="max-width:300px">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="main container" style="border:1px solid black; max-width:700px;">
+      <p>Tina's Kitchen</p>
+      <p>Hello</p>
+    </div>
+    <div class="container-fluid">
+      <div class="footer row justify-content-center"  style="border:1px solid black;">
+        <div class="col-12 col-md-4 text-center">
+          <img src="./assets/tinaimg.jpg" href="#" class="img-fluid" style="max-width:100px;">
+        </div>
+        <div class="col-12 col-md-4 text-center">
+          <p class="mt-3">Stay Updated!</p>
+          <form class="d-flex mx-auto mb-3" style="max-width:300px">
+            <input class="form-control me-2" type="email" placeholder="Your email address..." aria-label="email">
+            <button class="btn btn-outline-success" type="email">Submit</button>
+          </form>
+        </div>
+        <div class="col-12 col-md-4 text-center my-auto">
+          <p>Phone Number: (705) 791-8839</p>
+          <a href="https://www.facebook.com/Tina.wenting.lin" target="_blank" class="link">Facebook</a>
+        </div>
       </div>
     </div>
-  </nav>
+  </div>
 </body> 
 </html>
